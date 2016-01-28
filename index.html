@@ -6,12 +6,15 @@
 
 <body>
 
-	<button id="testDownload">Grab that PDF</button> 
+	<button id="testDownload">Grab that PDF</button>
+	<p>
+	<div id="UAString"></div>
 
     <script src="FileSaver.min.js"></script>
 	<script>
 			
 			document.getElementById("testDownload").addEventListener("click", executeDownload, false);
+			document.getElementById("UAString").textContent = navigator.userAgent;
 	
 	
 			var base64toBlob = function(b64Data, contentType, sliceSize) {
