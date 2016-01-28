@@ -44,7 +44,7 @@
 			
 			if(navigator.userAgent.match('CriOS')) {
 				//deal with specific Chrome on iOS issue
-				alert("You're using Chrome on iOS.  You get half marks for using Chrome but I'm afraid I'll have to deduct them for using iOS.  Your totlal score is 0.");
+				alert("You're using Chrome on iOS.  You get half marks for using Chrome but I'm afraid I'll have to deduct them for using iOS.  Your total score is 0.");
 				window.open("data:application/pdf;base64," + encodeURI(docVal), "_blank");
 			} else {
 				var blob = base64toBlob(docVal, 'application/pdf'); 
